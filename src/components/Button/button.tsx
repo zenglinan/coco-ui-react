@@ -1,9 +1,16 @@
 import React, { useState } from 'react'
 
-interface Prop {
+type ButtonSize = 'small' | 'large'
+type ButtonType = 'primary' | 'default' | 'link'
+
+interface ButtonProp {
+  type?: ButtonType
+  size?: ButtonSize
+  disabled?: boolean
+  loading?: boolean
 }
 
-const Component: React.FC<Prop> = (props) => {
+const Component: React.FC<ButtonProp> = (props) => {
   return (
       <div>1</div>
   )
