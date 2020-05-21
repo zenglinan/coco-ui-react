@@ -1,6 +1,6 @@
 import React from 'react';
-import logo from './logo.svg';
 import Hello from './Hello'
+import Button from './components/Button'
 
 interface Themes {
   [key: string]: { color: string, background: string }
@@ -27,6 +27,11 @@ function App() {
             <p>
               Edit <code>src/App.tsx</code> and save to reload.
             </p>
+            <h1>h1</h1>
+            <h2>h2</h2>
+            <h5>h5</h5>
+            <Button onClick={() => {alert(1)}} btnType="primary" autoFocus>Hello React</Button>
+            <Button btnType="link" href="www.baidu.com">Hello TS</Button>
             <Hello/>
             <a
                 className="App-link"
