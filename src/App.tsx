@@ -23,7 +23,6 @@ function App() {
       <div className="App">
         <ThemeContext.Provider value={themes.light}>
           <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo"/>
             <p>
               Edit <code>src/App.tsx</code> and save to reload.
             </p>
