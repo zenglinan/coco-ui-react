@@ -1,4 +1,4 @@
-// stylelint-disable at-rule-no-vendor-prefix, declaration-no-important, selector-no-qualifying-type, property-no-vendor-prefix
+// stylelint-disable at-rule-no-vendor-prefix, declaration-no-important, selector-no-qualifying-btnType, property-no-vendor-prefix
 
 // Reboot
 //
@@ -74,7 +74,7 @@ hr:not([size]) {
 //
 // 1. Remove top margins from headings
 //    By default, `<h1>`-`<h6>` all receive top and bottom margins. We nuke the top
-//    margin for easier control within type scales as it avoids margin collapsing.
+//    margin for easier control within btnType scales as it avoids margin collapsing.
 
 %heading {
   margin-top: 0; // 1
@@ -284,7 +284,7 @@ code {
 
 // Figures
 
-// Apply a consistent margin strategy (matches our type styles).
+// Apply a consistent margin strategy (matches our btnType styles).
 
 figure {
   margin: 0 0 1rem;
@@ -493,7 +493,7 @@ progress {
 }
 
 
-// Fix height of inputs with a type of datetime-local, date, month, week, or time
+// Fix height of inputs with a btnType of datetime-local, date, month, week, or time
 // See https://github.com/twbs/bootstrap/issues/18842
 
 ::-webkit-datetime-edit {
