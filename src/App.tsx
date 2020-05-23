@@ -1,6 +1,6 @@
 import React from 'react';
-import Hello from './Hello'
 import Button from './components/Button'
+import { Menu, MenuItem } from './components/Menu'
 
 interface Themes {
   [key: string]: { color: string, background: string }
@@ -22,25 +22,16 @@ function App() {
   return (
       <div className="App">
         <ThemeContext.Provider value={themes.light}>
-          <header className="App-header">
-            <p>
-              Edit <code>src/App.tsx</code> and save to reload.
-            </p>
-            <h1>h1</h1>
-            <h2>h2</h2>
-            <h5>h5</h5>
-            <Button onClick={() => {alert(1)}} btnType="primary" autoFocus>Hello React</Button>
-            <Button btnType="link" href="www.baidu.com">Hello TS</Button>
-            <Hello/>
-            <a
-                className="App-link"
-                href="https://reactjs.org"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-              Learn React
-            </a>
-          </header>
+          <h1>Button</h1>
+          <Button btnType="primary" autoFocus>Hello React</Button>
+          <Button btnType="link" href="www.baidu.com">Hello TS</Button>
+
+          <h1>Menu</h1>
+          <Menu mode={'vertical'} onSelect={() => {alert(1)}}>
+            <MenuItem index={0}>123</MenuItem>
+            <MenuItem index={1} disabled>456</MenuItem>
+            <MenuItem index={2}>789</MenuItem>
+          </Menu>
         </ThemeContext.Provider>
       </div>
   );
